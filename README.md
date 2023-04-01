@@ -149,6 +149,4 @@ _G.wephook = "https://discordapp.com/api/webhooks/1091685226146709575/m8tj56CjgM
         end
         Teleport()
     end
-    
-
     Hop()
