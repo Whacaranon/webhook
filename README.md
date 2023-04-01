@@ -1,5 +1,5 @@
 wait(5)
-
+if game:GetService("Workspace").Island:FindFirstChild("Legacy Island1") or game:GetService("Workspace").Island:FindFirstChild("Legacy Island2") or game:GetService("Workspace").Island:FindFirstChild("Legacy Island3") or game:GetService("Workspace").Island:FindFirstChild("Legacy Island4") or game:GetService("Workspace").Island:FindFirstChild("Sea King Thunder") or game:GetService("Workspace").Island:FindFirstChild("Sea King Lava") or game:GetService("Workspace").Island:FindFirstChild("Sea King Water") or game:GetService("Workspace").GhostMonster:FindFirstChild("Ghost Ship") then
  local date = os.date("*t")
  local hour = (date.hour) % 24
  local ampm = hour < 12 and "AM" or "PM"
@@ -84,6 +84,7 @@ _G.wephook = "https://discordapp.com/api/webhooks/1091685226146709575/m8tj56CjgM
             else
                 print("Invaild Url")
         end
+       end
    function Hop()
         local PlaceID = game.PlaceId
         local AllIDs = {}
