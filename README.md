@@ -43,7 +43,7 @@ _G.wephook = "https://discordapp.com/api/webhooks/1091685226146709575/m8tj56CjgM
                               ["name"] = "Web Hook King Legazy"
                           },
                           ["type"] = "rich",
-                          ["title"] = "By กูนี่ละ",
+                          ["title"] = "ถ้ามีอย่างไดอย่างนึงเกิด = ส่ง",
                           ["color"] = tonumber(0x13da),
                           ["fields"] = {
                               {
