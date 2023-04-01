@@ -1,4 +1,5 @@
 wait(8)
+if  game:GetService("Workspace").Island:FindFirstChild("Legacy Island1") or game:GetService("Workspace").Island:FindFirstChild("Legacy Island2") or game:GetService("Workspace").Island:FindFirstChild("Legacy Island3") or game:GetService("Workspace").Island:FindFirstChild("Legacy Island4") or  game:GetService("Workspace").Island:FindFirstChild("Sea King Thunder") or game:GetService("Workspace").Island:FindFirstChild("Sea King Lava") or game:GetService("Workspace").Island:FindFirstChild("Sea King Water") then
  local date = os.date("*t")
  local hour = (date.hour) % 24
  local ampm = hour < 12 and "AM" or "PM"
@@ -6,7 +7,7 @@ wait(8)
 local Moon;
 local Job = game.JobId
 local PlayerCount = #game.Players:GetPlayers()
-    		if  game:GetService("Workspace").Island:FindFirstChild("Legacy Island1") or game:GetService("Workspace").Island:FindFirstChild("Legacy Island2") or game:GetService("Workspace").Island:FindFirstChild("Legacy Island3") or game:GetService("Workspace").Island:FindFirstChild("Legacy Island4") then
+    		if  game:GetService("Workspace").Island:FindFirstChild("Legacy Island1") or game:GetService("Workspace").Island:FindFirstChild("Legacy Island2") or game:GetService("Workspace").Island:FindFirstChild("Legacy Island3") or game:GetService("Workspace").Island:FindFirstChild("Legacy Island4") or game:GetService("Workspace").GhostMonster:FindFirstChild("Ghost Ship") then
     Mirage = "🟢 เกิด"
 
 else
@@ -82,6 +83,7 @@ _G.wephook = "https://discordapp.com/api/webhooks/1091685226146709575/m8tj56CjgM
             end)
             else
                 print("Invaild Url")
+        end
         end
    function Hop()
         local PlaceID = game.PlaceId
