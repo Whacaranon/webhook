@@ -1,7 +1,7 @@
 if game:GetService("Workspace").Island:FindFirstChild("Legacy Island1") or game:GetService("Workspace").Island:FindFirstChild("Legacy Island2") or game:GetService("Workspace").Island:FindFirstChild("Legacy Island3") or game:GetService("Workspace").Island:FindFirstChild("Legacy Island4") or game:GetService("Workspace").Island:FindFirstChild("Sea King Thunder") or game:GetService("Workspace").Island:FindFirstChild("Sea King Lava") or game:GetService("Workspace").Island:FindFirstChild("Sea King Water") or game:GetService("Workspace").GhostMonster:FindFirstChild("Ghost Ship") then
     
 
-opk = game:GetService("Workspace").Island["Legacy Island3"].ClockTime.SurfaceGui.Countdown.Text
+
   
  local date = os.date("*t")
  local hour = (date.hour) % 24
@@ -11,7 +11,7 @@ local Moon;
 local Job = game.JobId
 local PlayerCount = #game.Players:GetPlayers()
 
-if game:GetService("Workspace").SeaMonster:FindFirstChild("SeaKing").Humanoid.Health > 0 or not game:GetService("Workspace").SeaMonster:FindFirstChild("SeaKing") then
+if game:GetService("Workspace").SeaMonster:FindFirstChild("SeaKing").Humanoid.Health > 0  then
     Sk = "Seaking Not die"
 elseif  game:GetService("Workspace").Island:FindFirstChild("Legacy Island1") then
     Sk = ""..game:GetService("Workspace").Island["Legacy Island1"].ClockTime.SurfaceGui.Countdown.Text
@@ -73,7 +73,6 @@ _G.wephook = "https://discordapp.com/api/webhooks/1091685226146709575/m8tj56CjgM
                                   ["name"] = "Time SeaKing ?:",
                                   ["value"] = "```Time SeaKing is : "..Sk.."```"
                               },
-                              
                           {
                                   ["name"] = "Hydra 👾:",
                                   ["value"] = "```Hydra is : "..HydraIsland.."```"
