@@ -1,7 +1,8 @@
 if game:GetService("Workspace").Island:FindFirstChild("Legacy Island1") or game:GetService("Workspace").Island:FindFirstChild("Legacy Island2") or game:GetService("Workspace").Island:FindFirstChild("Legacy Island3") or game:GetService("Workspace").Island:FindFirstChild("Legacy Island4") or game:GetService("Workspace").Island:FindFirstChild("Sea King Thunder") or game:GetService("Workspace").Island:FindFirstChild("Sea King Lava") or game:GetService("Workspace").Island:FindFirstChild("Sea King Water") or game:GetService("Workspace").GhostMonster:FindFirstChild("Ghost Ship") then
     
 
-
+opk = game:GetService("Workspace").Island["Legacy Island3"].ClockTime.SurfaceGui.Countdown.Text
+  
  local date = os.date("*t")
  local hour = (date.hour) % 24
  local ampm = hour < 12 and "AM" or "PM"
@@ -11,7 +12,7 @@ local Job = game.JobId
 local PlayerCount = #game.Players:GetPlayers()
     
     if  game:GetService("Workspace").Island:FindFirstChild("Legacy Island1") or game:GetService("Workspace").Island:FindFirstChild("Legacy Island2") or game:GetService("Workspace").Island:FindFirstChild("Legacy Island3") or game:GetService("Workspace").Island:FindFirstChild("Legacy Island4") then
-    Mirage = "🟢 เกิด"
+    Mirage = "🟢 เกิด เกราะจะหายใน "
 
 else
     Mirage = "🔴 ไม่เกิด"
@@ -52,7 +53,7 @@ _G.wephook = "https://discordapp.com/api/webhooks/1091685226146709575/m8tj56CjgM
                               },
                           {
                                   ["name"] = "SeaKing 💩:",
-                                  ["value"] = "```SeaKing is : "..Mirage.."```"
+                                  ["value"] = "```SeaKing is : "..Mirage..''..opk.."```"
                               },
                           {
                                   ["name"] = "Hydra 👾:",
