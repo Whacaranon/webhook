@@ -10,9 +10,22 @@ opk = game:GetService("Workspace").Island["Legacy Island3"].ClockTime.SurfaceGui
 local Moon;
 local Job = game.JobId
 local PlayerCount = #game.Players:GetPlayers()
+
+if game:GetService("Workspace").SeaMonster:FindFirstChild("SeaKing").Humanoid.Health > 0 then
+    Sk = "เจ้ายังไม่ตาย"
+elseif  game:GetService("Workspace").Island:FindFirstChild("Legacy Island1") then
+    Sk = ""..game:GetService("Workspace").Island["Legacy Island1"].ClockTime.SurfaceGui.Countdown.Text
+    elseif  game:GetService("Workspace").Island:FindFirstChild("Legacy Island2") then
+    Sk = ""..game:GetService("Workspace").Island["Legacy Island2"].ClockTime.SurfaceGui.Countdown.Text
+    elseif  game:GetService("Workspace").Island:FindFirstChild("Legacy Island3") then
+    Sk = ""..game:GetService("Workspace").Island["Legacy Island3"].ClockTime.SurfaceGui.Countdown.Text
+    elseif  game:GetService("Workspace").Island:FindFirstChild("Legacy Island4") then
+    Sk = ""..game:GetService("Workspace").Island["Legacy Island4"].ClockTime.SurfaceGui.Countdown.Text
+end
     
+  
     if  game:GetService("Workspace").Island:FindFirstChild("Legacy Island1") or game:GetService("Workspace").Island:FindFirstChild("Legacy Island2") or game:GetService("Workspace").Island:FindFirstChild("Legacy Island3") or game:GetService("Workspace").Island:FindFirstChild("Legacy Island4") then
-    Mirage = "🟢 เกิด เกราะจะหายใน "
+    Mirage = "🟢 เกิด"
 
 else
     Mirage = "🔴 ไม่เกิด"
@@ -53,7 +66,11 @@ _G.wephook = "https://discordapp.com/api/webhooks/1091685226146709575/m8tj56CjgM
                               },
                           {
                                   ["name"] = "SeaKing 💩:",
-                                  ["value"] = "```SeaKing is : "..Mirage..''..opk.."```"
+                   ["value"] = "```SeaKing is : "..Mirage.."```"
+                              },
+                              {
+                                  ["name"] = "Time SeaKing 💩:",
+                                  ["value"] = "```Time SeaKing is : "..Sk.."```"
                               },
                           {
                                   ["name"] = "Hydra 👾:",
