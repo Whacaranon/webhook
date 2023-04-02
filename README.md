@@ -11,8 +11,8 @@ local Moon;
 local Job = game.JobId
 local PlayerCount = #game.Players:GetPlayers()
 
-if game:GetService("Workspace").SeaMonster:FindFirstChild("SeaKing").Humanoid.Health > 0 then
-    Sk = "เจ้ายังไม่ตาย"
+if game:GetService("Workspace").SeaMonster:FindFirstChild("SeaKing").Humanoid.Health > 0 or not game:GetService("Workspace").SeaMonster:FindFirstChild("SeaKing") then
+    Sk = "Seaking Not die"
 elseif  game:GetService("Workspace").Island:FindFirstChild("Legacy Island1") then
     Sk = ""..game:GetService("Workspace").Island["Legacy Island1"].ClockTime.SurfaceGui.Countdown.Text
     elseif  game:GetService("Workspace").Island:FindFirstChild("Legacy Island2") then
@@ -66,12 +66,14 @@ _G.wephook = "https://discordapp.com/api/webhooks/1091685226146709575/m8tj56CjgM
                               },
                           {
                                   ["name"] = "SeaKing 💩:",
-                   ["value"] = "```SeaKing is : "..Mirage.."```"
+                             ["value"] = "```SeaKing is : "..Mirage.."```"
                               },
+                                  
                               {
-                                  ["name"] = "Time SeaKing 💩:",
+                                  ["name"] = "Time SeaKing ?:",
                                   ["value"] = "```Time SeaKing is : "..Sk.."```"
                               },
+                              
                           {
                                   ["name"] = "Hydra 👾:",
                                   ["value"] = "```Hydra is : "..HydraIsland.."```"
