@@ -44,7 +44,7 @@ if game:GetService("Workspace").GhostMonster:FindFirstChild("Ghost Ship") then
 
 Infomation = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId)
 NameGames = Infomation.Name
-_G.wephook = "https://discordapp.com/api/webhooks/1091685226146709575/m8tj56CjgMNs3jjX9HkAvhYjAT7gJjGQpcJJnsvpJhL2zEqwWlkdMUWDMDMXGSG6PzNN"
+_G.wephook = "https://discordapp.com/api/webhooks/1092693469086093403/6oOeuiQPHa1Ul0T0Or_KeMnzv_PRxchuSlXSZvlEbPzm62TTSs11InPzGrFxmpXi4k9k"
         if _G.wephook ~= "" then
             pcall(function()
                 local url =
